@@ -48,3 +48,16 @@ cursor:pointer;
 .landing-page .social-media-icons {
     margin-left: 2rem;
 }
+
+.connect-wallet-pane .connect-wallet-button {
+    width: 415px;
+    height: 60px;
+    background: #D35100;
+    border-radius: 20px;
+    font-style: normal;
+font-weight: 400;
+font-size: 28px;
+color: #FFFFFF;
+border:none;
+z-index:3;
+}

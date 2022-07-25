@@ -43,7 +43,7 @@ export default function Navbar(props: PropComponent) {
   <div className="collapse navbar-collapse justify-content-around col-10" id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto">
     
-      <li className="nav-item mx-4">
+      {/*<li className="nav-item mx-4">
       <img className="nav-icon-stake" alt="Stakes" src={Stakes}/>
       <Link className={`${location.pathname === '/stake'  ? 'active-link' : ''}`} to="/stake">STAKE</Link> 
       </li>
@@ -58,14 +58,14 @@ export default function Navbar(props: PropComponent) {
       <Link  className={`pl-2 ${location.pathname === '/claims'  ? 'active-link' : ''}`} to="/claims" onClick={ (event) => event.preventDefault() }>AIRDROP</Link> 
       
       </li>
-      {/* <li className="nav-item mx-4">
+       <li className="nav-item mx-4">
       <Link  className={`${location.pathname === '/gov'  ? 'active-link' : ''}`} to="/gov" onClick={ (event) => event.preventDefault() }>GOVERNANCE</Link> 
       </li> */}
 
     </ul>
-            {props.isWalletConnected && <p className="btn connect-wallet px-3 my-2 my-sm-0"> <img alt="Wallet icon" src={Wallet}/> {(props.balances.get(process.env.REACT_APP_QSCHAINID)?.get('uqck')) ? `${props.balances.get(process.env.REACT_APP_QSCHAINID)?.get('uqck')/1000000} QCK`  : '0'
+            {props.isWalletConnected && <p className="btn connect-wallet px-4 my-2 my-sm-0"> <img alt="Wallet icon" src={Wallet}/> {(props.balances.get(process.env.REACT_APP_QSCHAINID)?.get('uqck')) ? `${props.balances.get(process.env.REACT_APP_QSCHAINID)?.get('uqck')/1000000} QCK`  : '0'
       }</p>}
-      {!props.isWalletConnected && <button onClick={openModalHandler} className="btn connect-wallet-button px-3 my-2 my-sm-0"> Connect Wallet
+      {!props.isWalletConnected && <button onClick={openModalHandler} className="btn connect-wallet-button px-4 my-2 my-sm-0"> Connect Wallet
       </button>}
       {props.modalIsOpen && (
         <ConnectWalletModal handleClickOpen={props.handleClickOpen}/>

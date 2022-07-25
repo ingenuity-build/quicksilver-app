@@ -6,6 +6,7 @@ import StakePage from './pages/StakePage';
 import PoolsPage from './pages/PoolsPage';
 import GovernancePage from './pages/GovernancePage';
 import AirdropPage from './pages/AirdropPage';
+import AllocationsPage from './pages/AllocationsPage';
 import LogoStroke from './assets/quicksilver-logo-stroke.svg';
 import { initKeplrWithQuickSilver } from "./types/chains";
 import { SigningStargateClient } from "@cosmjs/stargate"
@@ -123,14 +124,15 @@ connectKeplr();
     <div className="img-logo text-center">
     <img className="logo-stroke" src={LogoStroke} alt="Quicksilver Logo"/>
     </div>
-  {location.pathname !== '/' && <Navbar isWalletConnected={isWalletConnected} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} openModalHandler={openModalHandler}  closeModalHandler={closeModalHandler} balances={balances} handleClickOpen={handleClickOpen}/>}
+  {/* {location.pathname !== '/' && <Navbar isWalletConnected={isWalletConnected} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} openModalHandler={openModalHandler}  closeModalHandler={closeModalHandler} balances={balances} handleClickOpen={handleClickOpen}/>} */}
 
    <Routes>
                       <Route path="/" element={<LandingPage/>}/>
-                      <Route path="/stake" element={<StakePage quicksilverBalances={balances} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} openModalHandler={openModalHandler}  closeModalHandler={closeModalHandler} isWalletConnected={isWalletConnected} setActiveStep={setActiveStep} handleClickOpen={handleClickOpen} handleNext={handleNext} handleBack={handleBack} activeStep={activeStep} />}/>
+                      {/* <Route path="/stake" element={<StakePage quicksilverBalances={balances} modalIsOpen={modalIsOpen} setModalIsOpen={setModalIsOpen} openModalHandler={openModalHandler}  closeModalHandler={closeModalHandler} isWalletConnected={isWalletConnected} setActiveStep={setActiveStep} handleClickOpen={handleClickOpen} handleNext={handleNext} handleBack={handleBack} activeStep={activeStep} />}/>
                       <Route path="/pools" element={<PoolsPage  />}/>
                       <Route path="/gov" element={<GovernancePage  />}/>
                       <Route path="/claims" element={<AirdropPage  />}/>
+                      <Route path="/allocations" element={<AllocationsPage  quicksilverBalances={balances} isWalletConnected={isWalletConnected} />}/> */}
                     
    </Routes>
 
