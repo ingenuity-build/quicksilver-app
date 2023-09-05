@@ -1,0 +1,101 @@
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-medium {
+    font-weight: 500;
+}
+
+.font-demi {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 800;
+}
+
+.font-lato {
+    font-family: $font-lato;
+}
+
+.font-poppins {
+    font-family: $font-poppins;
+}
+
+h1,
+.h1 {
+    font-size: 52px;
+    line-height: 1.5;
+}
+
+.h3,
+h3 {
+    font-size: 32px;
+    line-height: 1.5;
+
+    &-sm {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
+
+h4,
+.h4 {
+    font-size: 28px;
+    line-height: 1.5;
+
+    &-sm {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 24px;
+    line-height: 1.2;
+
+    &-lg {
+        font-size: 25px;
+    }
+}
+
+h6,
+.h6 {
+    font-size: 20px;
+    line-height: 1.5;
+
+    &-lg {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+}
+
+p,
+.copy-normal {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.copy-sm {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.copy-v-sm {
+    font-size: 12px;
+    line-height: 1.166;
+}
+
+.copy-lg {
+    font-size: 18px;
+    line-height: 1.22;
+}

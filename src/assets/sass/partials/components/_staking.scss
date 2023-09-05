@@ -1,0 +1,241 @@
+.staking {
+    padding: 62px 0 38px;
+
+    @include xl {
+        padding: 32px 0 8px;
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: 730px;
+        margin: 0 auto;
+        background: linear-gradient(206.84deg, rgba(255, 255, 255, 0.09) -46.03%, rgba(255, 255, 255, 0) 128.13%), #0E0E0E;
+        backdrop-filter: blur(76.4848px);
+        border: 1px solid rgba($white, 0.2);
+        border-radius: 12px;
+        padding: 24px 60px 26px;
+
+        @include xl {
+            max-width: 650px;
+            padding: 22px 42px 24px;
+        }
+
+        .nav-tabs {
+            margin-bottom: 21px;
+
+            @include xl {
+                margin-bottom: 18px;
+            }
+        }
+
+        .tab-content {
+            &__staking {
+                .staking_tab {
+
+                    &--amount {
+                        position: relative;
+
+                        &__to-stake {
+                            margin-bottom: 30px;
+
+                            @include xl {
+                                margin-bottom: 24px;
+                            }
+
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 43px;
+                                height: 43px;
+                                background-image: url("data:image/svg+xml,%3Csvg width='43' height='43' viewBox='0 0 43 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.3331 21.5L21.4998 28.6667L28.6665 21.5' stroke='white' stroke-width='1.43333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.5 14.3333V28.6666' stroke='white' stroke-width='1.43333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                position: absolute;
+                                top: 100%;
+                                left: 50%;
+                                transform: translate(-50%, -30%);
+                            }
+                        }
+
+                        &>p {
+                            line-height: 1.5;
+                            color: $lightgray;
+
+                            @include xl {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &__network {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            background: #141414;
+                            border: 1px solid #6a6a6a71;
+                            box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.75);
+                            border-radius: 8px;
+                            padding: 11px 12px;
+
+                            @include xl {
+                                padding: 8px 12px;
+                            }
+
+                            .network {
+                                display: flex;
+                                align-items: center;
+
+                                .image-wrapper {
+                                    width: 100%;
+                                    max-width: 28px;
+                                    min-width: 28px;
+                                    margin-right: 12px;
+
+                                    img {
+                                        object-fit: contain;
+                                    }
+                                }
+
+                                h6 {
+                                    color: $lightgray;
+                                }
+
+                                &__stats {
+                                    margin-left: 12px;
+                                    color: $gray-50;
+                                    margin-left: auto;
+
+                                    input {
+                                        display: block;
+                                        font-size: 23px;
+                                        line-height: 1.217;
+                                        background: transparent;
+                                        border: 0;
+                                        outline: none;
+                                        width: 100%;
+                                        max-width: 150px;
+                                        padding: 0;
+                                        text-align: right;
+                                        color: $gray-50;
+
+                                        &::-webkit-outer-spin-button,
+                                        &::-webkit-inner-spin-button {
+                                            -webkit-appearance: none;
+                                            margin: 0;
+                                        }
+
+                                        /* Firefox */
+                                        &[type=number] {
+                                            -moz-appearance: textfield;
+                                        }
+
+                                        @include xl {
+                                            font-size: 20px;
+                                        }
+
+                                        &.input-lg {
+                                            color: $lightgray;
+                                        }
+
+                                        &.input-sm {
+                                            font-size: 13px;
+                                            line-height: 1.25;
+                                        }
+
+                                        &::placeholder {
+                                            color: $gray-50;
+                                        }
+                                    }
+
+                                    h5 {
+                                        font-size: 23px;
+                                        line-height: 1.217;
+                                    }
+
+                                    p {
+                                        font-size: 13px;
+                                        line-height: 1.25;
+                                    }
+                                }
+                            }
+
+                            &.error {
+                                border-color: $red;
+
+                                .network {
+                                    &__stats {
+                                        input {
+                                            color: $red;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &__balance {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+
+                            &>p {
+                                font-size: 13px;
+                            }
+
+                            &--options {
+                                margin-left: auto;
+                                display: flex;
+                                align-items: center;
+                                flex-wrap: wrap;
+
+                                li {
+                                    &:not(:last-child) {
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &--additional-costs {
+                        margin: 26px 0 21px;
+
+                        @include xl {
+                            margin: 20px 0;
+                        }
+
+                        ul {
+                            li {
+                                display: flex;
+                                align-items: center;
+                                flex-wrap: wrap;
+
+                                @include xl {
+
+                                    p,
+                                    span {
+                                        font-size: 15px;
+                                    }
+                                }
+
+                                &:not(:last-child) {
+                                    margin-bottom: 12px;
+
+                                    @include xl {
+                                        margin-bottom: 10px;
+                                    }
+                                }
+
+                                &>span {
+                                    display: block;
+                                    text-decoration: underline;
+                                    text-decoration-style: dashed;
+                                    text-underline-offset: 4px;
+                                    text-decoration-thickness: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

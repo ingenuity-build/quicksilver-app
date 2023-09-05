@@ -1,0 +1,67 @@
+.airdrop-card {
+    padding: 32px 26px;
+    background: #171717;
+    border: 1px solid rgba($white, 0.2);
+    border-radius: 8px;
+    min-height: 263px;
+    display: flex;
+    flex-direction: column;
+
+    .image-wrapper {
+        width: 100%;
+        max-width: 48px;
+        min-width: 48px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        img {
+            object-fit: contain;
+            border-radius: 50%;
+        }
+    }
+
+    .text-wrapper {
+        text-align: center;
+        margin-bottom: 24px;
+
+        h4 {
+            line-height: 1.5;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    }
+
+    .link-wrapper {
+        text-align: center;
+        margin-top: auto;
+
+        a {
+            position: relative;
+            display: block;
+            width: fit-content;
+            @extend .font-demi;
+            line-height: 1;
+            color: $lightgray;
+            padding-right: 24px;
+            padding-bottom: 3px;
+            margin: 0 auto;
+            transition: .3s all ease;
+            color: $orange !important;
+
+            &::after {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.83398 14.431L14.1673 6.09766' stroke='%23FF8500' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5.83398 6.09766H14.1673V14.431' stroke='%23FF8500' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                transition: .3s all ease;
+            }
+        }
+    }
+}

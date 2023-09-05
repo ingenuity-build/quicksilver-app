@@ -6,13 +6,38 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compile-scss": "sass styles/styles.scss styles/global.css"
   },
   "dependencies": {
+    "@chain-registry/types": "0.16.0",
+    "@chakra-ui/icons": "2.0.12",
+    "@chakra-ui/react": "2.5.1",
+    "@cosmjs/cosmwasm-stargate": "0.29.5",
+    "@cosmjs/stargate": "0.29.5",
+    "@cosmos-kit/core": "^1.7.1",
+    "@cosmos-kit/cosmostation": "^0.15.39",
+    "@cosmos-kit/keplr": "^0.33.41",
+    "@cosmos-kit/leap": "^0.15.11",
+    "@cosmos-kit/react": "^1.3.34",
+    "@reduxjs/toolkit": "^1.9.5",
+    "bech32": "^2.0.0",
+    "bootstrap": "^5.3.0",
+    "bufferutil": "^4.0.7",
+    "chain-registry": "^1.18.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.8",
+    "juno-network": "^0.15.1",
+    "lokijs": "^1.5.12",
     "next": "13.4.8",
+    "pino-pretty": "^10.2.0",
+    "quicksilverjs": "^0.8.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-redux": "^8.1.2",
+    "sass": "^1.66.1",
+    "sharp": "^0.32.4",
+    "utf-8-validate": "^5.0.10"
   }
 }

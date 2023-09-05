@@ -1,0 +1,190 @@
+.airdrop-detailed {
+    padding: 45px 0 0;
+
+    .container {
+        max-width: 1184px;
+    }
+
+    .network {
+        &__intro {
+            display: flex;
+            align-items: center;
+
+            .image-wrapper {
+                width: 100%;
+                max-width: 56px;
+                min-width: 56px;
+                margin-right: 18px;
+
+                img {
+                    object-fit: contain;
+                }
+            }
+
+            .text-wrapper {
+                h3 {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &__stats {
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: right;
+
+                li {
+                    &:not(:first-child) {
+                        margin-left: 86px;
+                    }
+                }
+            }
+        }
+    }
+
+    .your-progress {
+        padding: 24px 0;
+        margin-bottom: 52px;
+    }
+
+    .overall-progress {
+        margin-top: 16px;
+    }
+
+    .progress-steps {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+
+        &__each {
+            width: 20%;
+            height: 12px;
+            background: $brown;
+            border-radius: 10px;
+
+            &.claimed {
+                background: $orange;
+            }
+
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .progress-count {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    .airdrops_all {
+        &--each {
+            padding: 32px;
+            background: rgba(30, 30, 30, 0.6);
+            backdrop-filter: blur(47px);
+            border-radius: 8px;
+
+            &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+
+            &__inner {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                .count {
+                    width: 62px;
+                    height: 62px;
+                    background: rgba(14, 14, 14, 0.5);
+                    border-radius: 114.926px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 32px;
+
+                    span,
+                    p {
+                        font-family: $font-poppins;
+                        font-size: 23.7779px;
+                        line-height: 1;
+                        font-weight: 700;
+                        letter-spacing: 1.05679px;
+                        text-transform: capitalize;
+                        display: block;
+                        margin-top: 4px;
+                        color: $almostwhite;
+                    }
+                }
+
+                .text-wrapper {
+
+                    p {
+                        margin-top: 4px;
+
+                        a {
+                            margin-left: 12px;
+                            color: $orange !important;
+
+                            &:hover {
+                                text-decoration: underline !important;
+                                text-underline-offset: 4px;
+                            }
+
+                            svg {
+                                min-width: 20px;
+                                margin-bottom: 2px;
+                                margin-left: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .overall-progress {
+                margin-top: 44px;
+            }
+
+            .progress-steps {
+                &__each {
+                    width: 33.33%;
+                    height: 8px;
+                }
+            }
+
+            .progress-count {
+                margin-top: 16px;
+            }
+
+
+            .btn-wrapper {
+                text-align: right;
+
+                .btn {
+                    min-width: 200px;
+
+                    &.disabled {
+                        background: transparent;
+                    }
+                }
+            }
+
+            &__coming-soon {
+                .text-wrapper {
+                    h6 {
+                        color: rgba(249, 249, 249, 0.5) !important;
+                    }
+                }
+
+                .btn-wrapper {
+                    .btn {
+                        color: #4A4A4A;
+                    }
+                }
+            }
+        }
+    }
+}

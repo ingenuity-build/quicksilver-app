@@ -1,0 +1,85 @@
+// Colors
+$black: #000;
+$white: #fff;
+$orange: #FF8500;
+$orange-secondary: #B76106;
+$brown: rgba(255, 133, 0, 0.2);
+
+$blue: #3E73F0;
+$red: #EE3C5C;
+$green: #46B346;
+
+$gray: #D9D9D9;
+$gray-secondary: #9E9E9E;
+$gray-50: #F9F9F980;
+$gray-80: #A8A8A8CC;
+$lightgray: #FBFBFB;
+
+$almostwhite: #CDCDCD;
+$almostblack: #0E0E0E;
+
+// States
+$hover_orange: #B76106;
+$pressed_orange: #E47A07;
+$hover_brown: rgba(255, 133, 0, 0.4);
+$pressed_brown: rgba(255, 133, 0, 0.15);
+
+.text-gray {
+    color: $gray;
+}
+
+.text-gray-secondary {
+    color: $gray-secondary;
+}
+
+.text-gray-50 {
+    color: $gray-50;
+}
+
+.text-gray-80 {
+    color: $gray-80;
+}
+
+.text-lightgray {
+    color: $lightgray !important;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-blue {
+    color: $blue !important;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+.text-almostwhite {
+    color: $almostwhite;
+}
+
+.text-almostblack {
+    color: $almostblack;
+}
+
+.text-red {
+    color: $orange-secondary;
+}
+
+.text-orange-secondary {
+    color: $red;
+}
+
+// Fonts
+$font-lato: 'Lato';
+$font-poppins: 'Poppins';

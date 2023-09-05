@@ -1,0 +1,25 @@
+@import "partials/utilities/fonts";
+@import "partials/utilities/variables";
+@import "partials/utilities/breakpoints";
+
+@import "partials/vendors/swiper";
+
+@import "partials/base/form";
+@import "partials/base/typography";
+@import "partials/base/generics";
+
+@import "partials/layout/header";
+@import "partials/layout/footer";
+
+@import "partials/components/cards";
+@import "partials/components/notifications";
+@import "partials/components/staking";
+@import "partials/components/modals";
+@import "partials/components/staking-flow";
+@import "partials/components/stake-allocation";
+@import "partials/components/participation-rewards";
+@import "partials/components/assets";
+@import "partials/components/defi";
+@import "partials/components/qck-airdrops";
+@import "partials/components/other-airdrops";
+@import "partials/components/airdrop-detailed";

@@ -1,0 +1,47 @@
+.other-airdrops {
+    padding: 65px 0;
+
+
+    &__title {
+        margin-bottom: 42px;
+
+        h4 {
+            margin-bottom: 18px;
+        }
+
+        p {
+            width: 100%;
+            max-width: 933px;
+            line-height: 1.5;
+            margin: 0 auto;
+        }
+    }
+
+    &__swiper {
+        width: 100%;
+        max-width: 1321px;
+        position: relative;
+        margin: 0 auto;
+
+        .swiper {
+            width: 100%;
+            max-width: 1144px;
+            margin: 0 auto;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            left: 0;
+
+            &:after {
+                font-size: 15px;
+                color: $orange;
+            }
+        }
+
+        .swiper-button-next {
+            left: auto;
+            right: 0;
+        }
+    }
+}
