@@ -4684,7 +4684,7 @@ a {
   color: rgba(249, 249, 249, 0.5019607843) !important;
 }
 .assets__portfolio--items {
-  height: auto;
+  height: 150px;
   max-height: 150px;
   padding-right: 18px;
   overflow: auto;

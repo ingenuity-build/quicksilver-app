@@ -42,7 +42,7 @@ function Unstaking({ selectedNetwork, quickSilverBalance, balance }) {
 
   const { getOfflineSignerAmino } = useChainWallet(
     quickSilverChainId,
-    wallet?.name
+    wallet?.name || process.env.NEXT_PUBLIC_REACT_APP_DEFAULT_WALLET
   );
 
   useEffect(() => {

@@ -1,25 +1,15 @@
-import {
-  atom,
-  lavender,
-  sanka,
-  smartnodes,
-  stir,
- 
-} from "@image/index";
+import { atom, lavender, sanka, smartnodes, stir } from "@image/index";
 export const CardData = [
   {
     image: sanka,
     title: "atom",
     networkStates: {
       number: 12.23,
-      text: "quick silver apy",
     },
     networkBalance: {
       number: 12.23,
-      text: "Qicksilver Balance",
     },
     otherChainBalance: {
-      text: "Other Chain Balance",
       number: 12.23,
     },
     deposite: "desposite",
@@ -30,14 +20,11 @@ export const CardData = [
     title: "atom",
     networkStates: {
       number: 12.23,
-      text: "quick silver apy",
     },
     networkBalance: {
       number: 12.23,
-      text: "Qicksilver Balance",
     },
     otherChainBalance: {
-      text: "Other Chain Balance",
       number: 12.23,
     },
     deposite: "desposite",
@@ -48,14 +35,11 @@ export const CardData = [
     title: "atom",
     networkStates: {
       number: 12.23,
-      text: "quick silver apy",
     },
     networkBalance: {
       number: 12.23,
-      text: "Qicksilver Balance",
     },
     otherChainBalance: {
-      text: "Other Chain Balance",
       number: 12.23,
     },
     deposite: "desposite",
@@ -66,18 +50,14 @@ export const CardData = [
     title: "atom",
     networkStates: {
       number: 12.23,
-      text: "quick silver apy",
     },
     networkBalance: {
       number: 12.23,
-      text: "Qicksilver Balance",
     },
     otherChainBalance: {
-      text: "Other Chain Balance",
       number: 12.23,
     },
     deposite: "desposite",
     withdraw: "withdraw",
   },
-
 ];
